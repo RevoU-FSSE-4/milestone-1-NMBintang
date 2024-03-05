@@ -11,8 +11,7 @@
 }
 .header {
     max-width: 100%;
-    height: 10vh;
-    /* background-color: #F2F2F2; */
+    height: 8vh;
     position: sticky;
     top: 0px;
     display: flex;
@@ -22,13 +21,14 @@
     font-optical-sizing: auto;
     font-style: normal;
     z-index: 200;
+    background: rgba(0, 0, 0, 0.5);
 }
 #container-logo h1 {
     display: flex;
     text-shadow: black 2px 0 10px;
 }
 h1 {
-    color: gold;
+    color: #ebe5e5;
     font-size: 2em;
 }
 #container-nav {
@@ -39,18 +39,21 @@ h1 {
     cursor: pointer;
     /* margin-left: 25vw; */
 }
-ul li{
-    border: 3px solid #ffd800;
+#container-nav li {
+    border: 3px solid #ebe5e5;
     box-shadow: 3px 0px 5px  black;
     padding: 0px 1em;
     transition: border-radius 1s;
 }
-ul li:hover{
+#container-nav li:hover{
     border-radius: 50px;
     border: 3px solid #ffd800;
 }
+ul li a {
+    color: #f1f1f1;
+}
 a {
-    color: white;
+    color: black;
     text-decoration: none;
 }
 .hamburger{
@@ -63,6 +66,7 @@ a {
 #container-header3 {
     /* margin-left: 20vw; */
     display: flex;
+    gap: 10px;
 }
 .logo-header3 {
     background-color: white;
@@ -79,6 +83,7 @@ main {
 }
 #myvideo {
     position:absolute;
+    top: -25px;
     right: 0;
     bottom: 0;
     min-width: 100%; 
@@ -86,24 +91,29 @@ main {
 }
 #quote {
     z-index: 100;
-    margin-top:15% ;
-    color: white;
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
 }
 #tittle-break {
-    margin-top: 30%;
+    margin-top: 100vh;
+    margin-bottom: 3%;
     font-size: 2em;
     display: flex;
     justify-content: center;
     color:  black;
 }
 #tittle{
+    margin-top: 5%;
     font-size: 2em;
     display: flex;
     justify-content: center;
     color:  black;
-    /* margin-top: 50%; */
 }
-.package {
+.value {
     height: auto;
     display: flex;
     flex-wrap: wrap;
@@ -111,39 +121,126 @@ main {
     gap: 75px;
     /* border: 1px solid #fffff0; */
 }
-.package-card {
-    border: solid 1px black;
-    width: 17vw;
-    height: 40vh;
-    padding: 10px;
+.our-value-card {
+    border: 1px solid grey;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    height: 40vh;
+    width: 25vw;
+    font-size: 0.75em;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow:  35px 35px 70px #bebebe,-35px -35px 70px #ffffff;
+}
+.our-value-card img {
+    display: flex;
+    width: 50px;
+    height: 50px;
+}
+.our-value-card p {
+    font-size: small;
+    padding: 2%;
+}
+#services {
+    display: flex;
+    justify-content: space-between;
+}
+.package {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 75px;
+}
+.package-card {
+    width: 25vw;
+    height: 50vh;
     transition: transform 0.3s ease;
+    margin-top: 5%;
+    border: 1px solid grey;
+    border-radius: 50px;
+    background: linear-gradient(225deg, #c6c1c1, #ebe5e5);
+    box-shadow:  -35px 35px 70px #bbb6b6,
+                35px -35px 70px #fdf6f6;
 }
 .package-card:hover{
     transform: scale(1.1);
 }
-.package-card p{ 
+.package-card h4 {
     text-align: center;
+    /* justify-content: center; */
+}
+.package-card p{ 
+    /* text-align: center; */
     justify-content: center;
-    font-size:2em;
-    text-shadow: black 2px 0px 15px;
+    padding: 2%;
+    font-size:0.75em;
     color: black;
 } 
-#package-card1 {
-    background-image: url(https://lh5.googleusercontent.com/cAra0MWV68sySBkO2Z_JWlRhDYumQ-zcEaNThy1LFGRsIY_c9vPLAnJwp9_jjzCBIMNdhvodLyglyYwEI3p8auFuG6-6YPtaF1QIF7fyRQzG1jdf2PVl_tty1_azM7uJDjCBCZqmwoIy5c4rnuaATR8);
-    background-size: cover;
-    background-position: center;
+.package-card img{
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
 }
-#package-card2 {
-    background-image: url(https://www.vmcdn.ca/f/files/greatwest/images/hot-summer-guide/2023-edition/articles/06-11-nm-01.jpg;w=960);
-    background-size: cover;
-    background-position: center;
+#promo {
+    margin: 2% 0%;
+    font-size: 2em;
+    position: relative;
+    animation: slide 20s infinite;
 }
-#package-card3 {
-    background-image: url(https://www.shutterstock.com/image-photo/balinese-girl-performing-traditional-dress-600nw-1769736218.jpg);
+@keyframes slide {
+    from {left: -100%;}
+    to {left:100%;}
+}
+#tittle-reservation{
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    color:  black;
+}
+#form-background{
+    height: 630px;
+    max-width: 100%;
+    background-image: url(https://s3-ap-southeast-1.amazonaws.com/motoristprod/editors%2Fimages%2F1643078091681-how_to_choose_the_right_car_workshop_malaysia_featured.jpg);
     background-size: cover;
     background-position: center;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    height: 50vh;
+    background: #f1f1f1;
+    border-radius: 10px;
+    transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.shadow {
+    box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
+                0 0  0 2px rgb(190, 190, 190),
+                0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+button {
+    color: white;
+    background-color: black;
+    height: 3vh;
+}
+button:hover {
+    color: #ffd800;
+}
+#faq li {
+    font-size:x-large;
+    text-align: center;
+    font-weight: 500;
+}
+#faq p {
+    text-align: center;
+    font-size: medium;
+    font-weight: 100;
 }
 .galery {
     display: grid;
@@ -175,58 +272,6 @@ main {
 #galery-card5 {
     grid-column: 1 / span 2;
     grid-row: 3 ;
-}
-.responsive-img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.responsive-img-grayscale{
-    filter: grayscale(100%);
-    transition: grayscale ease;
-}
-.responsive-img-grayscale:hover{
-    filter: grayscale(0%);
-}
-#promo {
-    font-size: 2em;
-    position: relative;
-    animation: slide 20s infinite;
-    /* color:  #ffd800; */
-    /* background-color: #000000; */
-}
-@keyframes slide {
-    from {left: -100%;}
-    to {left:100%;}
-}
-#form-background{
-    height: 630px;
-    max-width: 100%;
-    background-image: url(https://c02.purpledshub.com/uploads/sites/62/2021/09/Silhouetted-elephants.-Chris-Packham.-Remembering-Elephants-da11c3e.jpg?w=1029&webp=1);
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.form {
-    display: flex;
-    flex-direction: column;
-    width: 20vw;
-    backdrop-filter: blur(10px) ;
-    /* height: 20vh; */
-}
-#newsletters{
-    display: flex;
-    justify-content: space-between;
-}
-button {
-    color: white;
-    background-color: black;
-    height: 3vh;
-}
-button:hover {
-    color: #ffd800;
 }
 /* footer design */
 .footer {

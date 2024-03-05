@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- meta tag for SEO -->
+    <meta name="description" content="">
+    <!-- search more meta tag for SEO -->
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <!-- icon -->
+    <link rel="icon" type="image/x-icon" href="">
+    <title>STARLIGHT</title>
+</head>
+<body id="body">
+    <header class="container header">
+        <section id="container-logo">
+            <h1 id="container-tittle">SS</h1>
+        </section>
+        <nav>
+            <ul id="container-nav">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="custom.html">RESERVATION</a></li>
+                <li><a href="gallery.html">CUSTOMERS</a></li>
+                <!-- <button class="dark-mode" onclick="myFunction()">Toggle dark mode</button> -->
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        </nav>
+        <picture id="container-header3">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ6dnNJrsKrnm9e95knQdQCob7_6m815yOHg&usqp=CAU" alt="FAQ-logo" class="logo-header3">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSp7-ZW3cH8ul0vgyXhLuoVTo3Ku7JNypJEA&usqp=CAU" alt="language" width="50px" height="50px" class="logo-header3">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6EkF9UMcw-xbclSB-jjjR0VRLhtV6ZLXtNQ&usqp=CAU" alt="login"class="logo-header3">
+        </picture>
+    </header>
+    <main>
+        <h3 class="container" id="tittle-reservation">Reservation</h3>
+        <section class="container" id="form-background">
+            <form class="form shadow">
+                <input type="text" placeholder="Name" required><br>
+                <input type="email" placeholder="E-mail" required><br>
+                <input type="text" placeholder="Type Car" required><br>
+                <div id="services">
+                    <label for="maintenance">Regular Maintenance</label><br>
+                    <input type="checkbox" id="services" name="maintenance" value="regular-maintenance">
+                </div>
+                <div id="services">
+                    <label for="maintenance">Dyno Test</label><br>
+                    <input type="checkbox" id="services" name="maintenance" value="Dyno-Test">
+                </div>
+                <div id="services">
+                    <label for="maintenance">Custom Services</label><br>
+                    <input type="checkbox" id="services" name="maintenance" value="Custom-services">
+                </div>
+                <p>Book Date</p>
+                <input type="datetime-local">
+                <textarea style="height: 100px; width: 250px;" placeholder="Any special request or what do you feel about your car right now ?"></textarea>
+                <div id="services">
+                    <p>Send Newsletters</p>
+                    <input type="checkbox">
+                </div>
+                <button name="subject" type="submit" value="form">Make Reservation</button><br><br>
+            </form>
+        </section>
+        <h3 id="tittle">F A Q</h3>
+        <section class="container">
+            <ul id="faq">
+                <li>What types of cars do you work on?</li>
+                <p>We specialize in street racing cars but can work on a wide range of vehicles, including imports, domestics, and exotics.</p><br>
+                <li>Do you offer performance tuning services?</li>
+                <p>Yes, we provide performance tuning services to optimize your car's engine, transmission, and other components for maximum power and efficiency.</p><br>
+                <li>Can you help with suspension upgrades?</li>
+                <p>Absolutely! Our expert technicians can enhance your car's suspension system to improve handling, stability, and responsiveness.</p><br>
+                <li>Do you offer custom fabrication services?</li>
+                <p>Yes, we have a dedicated fabrication shop where we can create custom parts, accessories, and bodywork to meet your unique needs.</p><br>
+                <li>What kind of maintenance and repair services do you offer?</li>
+                <p>We offer a full range of maintenance and repair services, from oil changes and brake replacements to engine diagnostics and repairs.</p><br>
+                <li>Do you provide trackside support for racing events?</li>
+                <p>Yes, we offer trackside support to ensure that your car performs at its best during racing events, including tuning adjustments and troubleshooting.</p><br>
+                <li>Can you help me with selecting aftermarket parts for my car?</li>
+                <p>Of course! Our knowledgeable staff can assist you in selecting the right aftermarket parts and accessories to enhance your car's performance and appearance.</p><br>
+                <li>Do you offer warranty on your services?</li>
+                <p>Yes, we stand behind the quality of our workmanship and offer warranties on our services to provide you with peace of mind.</p><br>
+                <li>How long does it take to complete a project?</li>
+                <p>The time required for a project depends on its complexity and the services needed. We'll provide you with a detailed estimate and timeline before starting any work.</p><br>
+                <li>How can I schedule an appointment?</li>
+                <p>You can schedule an appointment by contacting us via phone, email, or through our website. Our friendly staff will be happy to assist you with booking a convenient time for your visit.</p><br>
+            </ul>
+        </section>
+        <footer class="container footer">
+            <section class="footertext">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Contact</a>
+                <a href="#">Our Impact</a>
+            </section>
+            <section class="footertext">
+                <a href="#">Work With Us</a>
+                <a href="#">FAQ</a>
+                <a href="#">Customer Service</a>
+            </section>
+            <!-- add logo to link -->
+            <section class="footertext">
+                    <p class="follow-us">Follow Us</p>
+                <picture class="footer3">
+                    <img src="https://freelogopng.com/images/all_img/1692798134facebook-logo-png-black.png" alt="facebookLogo" width="50px" height="50px" class="follow-us-logo">
+                    <img src="https://freelogopng.com/images/all_img/1690643640twitter-x-icon-png.png" alt="xLogo" width="50px" height="50px" class="follow-us-logo">
+                    <img src="https://freelogopng.com/images/all_img/1658588801instagram-icon-png.png" alt="intagramLogo" width="50px" height="50px" class="follow-us-logo">
+                    <img src="https://freelogopng.com/images/all_img/1656504569black-and-white-youtube-logo.png" alt="youtubeLogo" width="50px" height="50px" class="follow-us-logo">
+                </picture>
+            </section>
+        </footer>
+    </main>
