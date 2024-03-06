@@ -21,7 +21,7 @@
         font-optical-sizing: auto;
         font-style: normal;
         z-index: 200;
-        background: rgba(0, 0, 0, 0.5);
+        background: rgba(243, 240, 240, 0.912);
         justify-content: space-between;
         padding: 0 5%;
     }
@@ -34,22 +34,25 @@
         font-size: 2em;
     }
     #container-nav {
+        height: auto;
         display: none;
         flex-direction: column;
-        position: absolute;
-        top: 41px;
-        margin-left: 260px;
         font-size:large;
-        /* margin-right: 5px; */
         background-color: white;
     }
     #container-nav.active {
         display: flex;
+        width: 100vw;
+        color: black;
+        margin-top:8vh;
+        margin-left: -14vw;
     }
     .hamburger {
         display: block;
-        /* margin-left:350px; */
         z-index: 300;
+        position: fixed;
+        left: 0;
+        size: 100px;
     }
     /* Add animations */
 @keyframes fadeIn {
@@ -75,7 +78,7 @@
         border: 3px solid #ffd800;
     }
     ul li a {
-        color: #f1f1f1;
+        color:black;
     }
     a {
         color: black;
@@ -110,21 +113,23 @@
     #quote {
         z-index: 100;
         position: absolute;
-        bottom: 0;
+        bottom: 10%;
         background: rgba(0, 0, 0, 0.5);
         color: #f1f1f1;
-        width: 100%;
-        padding: 20px;
+        width: 90vw;
+        padding: 0px 25px;
     }
     #tittle-break {
+        padding: 0 50px;
         margin-top: 100vh;
         margin-bottom: 3%;
-        font-size: 2em;
+        font-size: 1.5em;
         display: flex;
         justify-content: center;
         color:  black;
     }
     #tittle{
+        padding: 0 50px;
         margin-top: 5%;
         font-size: 2em;
         display: flex;
@@ -230,22 +235,17 @@
         background-size: cover;
         background-position: center;
         display: flex;
-        /* justify-content: center; */
+        justify-content: center;
         /* align-items: center; */
     }
     .form {
         display: flex;
         flex-direction: column;
-        width: 25vw;
+        width: 55vw;
         height: 50vh;
         background: #f1f1f1;
         border-radius: 10px;
         transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    }
-    .shadow {
-        box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
-                    0 0  0 2px rgb(190, 190, 190),
-                    0.3em 0.3em 1em rgba(0,0,0,0.3);
     }
     button {
         color: white;
@@ -256,19 +256,21 @@
         color: #ffd800;
     }
     #faq li {
+        padding: 0 50px;
         font-size:x-large;
         text-align: center;
         font-weight: 500;
     }
     #faq p {
+        padding: 0 50px;
         text-align: center;
-        font-size: medium;
+        font-size: 0.75em;
         font-weight: 100;
     }
     .galery {
         display: grid;
         grid-template-columns:25vw 25vw 25vw; /* cek size*/
-        grid-template-rows: 50vh 50vh 50vh; /* cek size*/
+        grid-template-rows: 20vh 20vh 20vh; /* cek size*/
         justify-content: center;
         gap: 10px;
         padding: 20px 0px;
@@ -298,6 +300,7 @@
     }
     /* footer design */
     .footer {
+        padding: 0 50px;
         display: flex;
         justify-content: center;
         align-items: center;
