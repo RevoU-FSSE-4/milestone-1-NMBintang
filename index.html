@@ -23,8 +23,8 @@
             <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
             <ul id="container-nav">
                 <li><a href="index.html">HOME</a></li>
-                <li><a href="custom.html">RESERVATION</a></li>
-                <li><a href="gallery.html">CUSTOMERS</a></li>
+                <li><a href="#tittle-reservation">RESERVATION</a></li>
+                <li><a href="#tittle-galery">CUSTOMERS</a></li>
                 <!-- <button class="dark-mode" onclick="myFunction()">Toggle dark mode</button> -->
             </ul>
         </nav>
@@ -118,6 +118,82 @@
             </article>
         </section>
         <h4 id="promo">Make Reservation now and get your discount</h4>
+        <h3 class="container" id="tittle-reservation">Reservation</h3>
+        <section class="container" id="form-background">
+            <form class="form shadow">
+                <input type="text" placeholder="Name" required><br>
+                <input type="email" placeholder="E-mail" required><br>
+                <input type="text" placeholder="Type Car" required><br>
+                <div id="services">
+                    <label for="maintenance">Regular Maintenance</label><br>
+                    <input type="checkbox" id="services" name="maintenance" value="regular-maintenance">
+                </div>
+                <div id="services">
+                    <label for="maintenance">Dyno Test</label><br>
+                    <input type="checkbox" id="services" name="maintenance" value="Dyno-Test">
+                </div>
+                <div id="services">
+                    <label for="maintenance">Custom Services</label><br>
+                    <input type="checkbox" id="services" name="maintenance" value="Custom-services">
+                </div>
+                <p>Book Date</p>
+                <input type="datetime-local">
+                <textarea style="height: 15vh; width: 25vw;" placeholder="Any special request ?"></textarea>
+                <div id="services">
+                    <p>Send Newsletters</p>
+                    <input type="checkbox">
+                </div>
+                <button name="subject" type="submit" value="form">Make Reservation</button><br><br>
+            </form>
+        </section>
+        <h3 id="tittle">F A Q</h3>
+        <section class="container">
+            <ul id="faq">
+                <li>What types of cars do you work on?</li>
+                <p>We specialize in street racing cars but can work on a wide range of vehicles, including imports, domestics, and exotics.</p><br>
+                <li>Do you offer performance tuning services?</li>
+                <p>Yes, we provide performance tuning services to optimize your car's engine, transmission, and other components for maximum power and efficiency.</p><br>
+                <li>Can you help with suspension upgrades?</li>
+                <p>Absolutely! Our expert technicians can enhance your car's suspension system to improve handling, stability, and responsiveness.</p><br>
+                <li>Do you offer custom fabrication services?</li>
+                <p>Yes, we have a dedicated fabrication shop where we can create custom parts, accessories, and bodywork to meet your unique needs.</p><br>
+                <li>What kind of maintenance and repair services do you offer?</li>
+                <p>We offer a full range of maintenance and repair services, from oil changes and brake replacements to engine diagnostics and repairs.</p><br>
+                <li>Do you provide trackside support for racing events?</li>
+                <p>Yes, we offer trackside support to ensure that your car performs at its best during racing events, including tuning adjustments and troubleshooting.</p><br>
+                <li>Can you help me with selecting aftermarket parts for my car?</li>
+                <p>Of course! Our knowledgeable staff can assist you in selecting the right aftermarket parts and accessories to enhance your car's performance and appearance.</p><br>
+                <li>Do you offer warranty on your services?</li>
+                <p>Yes, we stand behind the quality of our workmanship and offer warranties on our services to provide you with peace of mind.</p><br>
+                <li>How long does it take to complete a project?</li>
+                <p>The time required for a project depends on its complexity and the services needed. We'll provide you with a detailed estimate and timeline before starting any work.</p><br>
+                <li>How can I schedule an appointment?</li>
+                <p>You can schedule an appointment by contacting us via phone, email, or through our website. Our friendly staff will be happy to assist you with booking a convenient time for your visit.</p><br>
+            </ul>
+        </section>
+        <h3 class="container" id="tittle-galery">OUR VALUED CUSTOMERS GALLERY</h3>
+        <section class="container">
+            <picture class="galery">
+                <div class="galery-card" id="galery-card1" >
+                    <img loading="lazy" src="https://img.freepik.com/premium-photo/drift-racing-japan-tuning-cars-smoke-speed-drone-photo-tokio-wallpaper-photo_997345-937.jpg" alt="JAPAN DRIFT CARS">
+                </div>
+                <div class="galery-card" id="galery-card2">
+                    <img loading="lazy" src="https://i.pinimg.com/originals/c8/dd/b8/c8ddb80d712fbc255991f3cd3f6c057f.jpg" alt="BMW YELLOW">
+                </div>
+                <div class="galery-card" id="galery-card3">
+                    <img loading="lazy" src="https://media.istockphoto.com/id/144328410/photo/draster-ready-for-takeoff.jpg?s=612x612&w=0&k=20&c=0d9NGahPSu8cvg5ZNZj29Uan9dVEJ3W6VwaG1ayhOHU=" alt="DRAG CAR" >
+                </div>
+                <div class="galery-card" id="galery-card4">
+                    <img loading="lazy" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6Qc7_Qhony-BjPnrw0JLo8lMhcbV7wcuYjQ&usqp=CAU" alt="blue peugeuot" >
+                </div>
+                <div class="galery-card" id="galery-card5">
+                    <img loading="lazy" src="https://carfromjapan.com/wp-content/uploads/2022/09/Toyota-Supra-MKIV-1024x818.jpg" alt="black toyoya" >
+                </div>
+                <div class="galery-card" id="galery-card6">
+                    <img loading="lazy" src="https://rennlist.com/wp-content/uploads/2018/11/997-slant-nose-9.jpg" alt="custom cars" >
+                </div>
+            </picture>
+        </section>
 
         <footer class="container footer">
             <section class="footertext">

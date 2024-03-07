@@ -109,6 +109,12 @@ main {
     justify-content: center;
     color:  black;
 }
+#tittle-galery{
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    color:  black;
+}
 .value {
     height: auto;
     display: flex;
