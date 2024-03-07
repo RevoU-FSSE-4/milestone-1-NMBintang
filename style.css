@@ -91,11 +91,11 @@ main {
     bottom: 0;
     background: rgba(0, 0, 0, 0.5);
     color: #f1f1f1;
-    width: 100%;
+    width: 95%;
     padding: 20px;
 }
 #tittle-break {
-    margin-top: 100vh;
+    margin-top:100vh;
     margin-bottom: 3%;
     font-size: 2em;
     display: flex;
