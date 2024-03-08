@@ -89,7 +89,7 @@ Hello, for completing milestone-1 assignment by FSSE RevoU I was created this ca
 
 6. You need to wait approximately 24 hour again for niagahoster registering and make connection with Netlify DNS
 
-7. now you can accsess [www.noormbintang.site](www.noormbintang.site)
+7. now you can accsess this site through [THIS LINK](https://noormbintang.site/)
 
 
 Note : if you can't access noormbintang.site, probably niagahoster still working on it, you can access website using [this link](https://starlights.netlify.app/)
