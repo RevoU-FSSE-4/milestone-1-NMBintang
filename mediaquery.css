@@ -138,6 +138,23 @@
         justify-content: center;
         color:  black;
     }
+    #tittle-galery{
+        padding: 0 50px;
+        margin-top: 5%;
+        font-size: 2em;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        color:  black;
+    }
+    #tittle-service{
+        padding: 0 50px;
+        margin-top: 5%;
+        font-size: 2em;
+        display: flex;
+        justify-content: center;
+        color:  black;
+    }
     .value {
         height: auto;
         display: flex;
@@ -316,4 +333,8 @@
     .follow-us-logo {
         border-radius: 100%;
     }
+}
+#copyright {
+    text-align: center;
+    justify-content: center;
 }

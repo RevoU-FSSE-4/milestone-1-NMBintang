@@ -95,7 +95,7 @@ main {
     padding: 20px;
 }
 #tittle-break {
-    margin-top:100vh;
+    margin-top:110vh;
     margin-bottom: 3%;
     font-size: 2em;
     display: flex;
@@ -110,6 +110,14 @@ main {
     color:  black;
 }
 #tittle-galery{
+    margin-top: 5%;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    color:  black;
+}
+#tittle-service{
+    margin-top: 5%;
     font-size: 2em;
     display: flex;
     justify-content: center;
@@ -289,4 +297,8 @@ button:hover {
 }
 .follow-us-logo {
     border-radius: 100%;
+}
+#copyright {
+    text-align: center;
+    justify-content: center;
 }
